@@ -31,7 +31,7 @@ describe('repeatString', () => {
     was randomly generated. */
     expect(repeatString('hey', number).match(/((hey))/g).length).toEqual(number);
   });
-  test('works with blank strings', () => {
+  test.skip('works with blank strings', () => {
     expect(repeatString('', 10)).toEqual('');
   });
 });

@@ -2,17 +2,18 @@
 
 
 
-function repeatString(string, number) {
+function repeatString(string, num) {
     let repeatedString = "";
-    if (number < 0) {
-        return ('ERROR');
-    } else {
-        for (let i = 1; i <= number; i++) {
+    for (let i = 1; i <= num; i++) {
+        if (i < 0) {
+            console.log('ERROR');
+        } else {
             repeatedString += string;
         }
     }
     return repeatedString;
 }
+
 
 /*console.log(repeatString(string, num));
 console.log()*/
