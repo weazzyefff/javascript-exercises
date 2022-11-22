@@ -1,6 +1,6 @@
 const leapYears = function(year) {
 
-    if (year %100 === 0 && year % 400 === 0) {
+    if (year %100 && year % 400) {
         return true;
     } else if (year % 4 === 0 && year % 100 != 0) {
         return true;
@@ -11,11 +11,11 @@ const leapYears = function(year) {
 //leapYears(1996);
 //leapYears(2000);
 //leapYears(1985);// undefined
-leapYears(1997);// 
-leapYears(34992);// 
-//leapYears(1900);//f//True
+//leapYears(1997);// undefined
+//leapYears(34992);// true
+leapYears(1900);//f//True
 //leapYears(1600);//t// True
-//leapYears(700);//f//True
+leapYears(700);//f//True
 
 
 // Do not edit below this line
