@@ -3,7 +3,7 @@ const sumAll = function (...args) {
     console.log(args);
     for (const item of args) {
         if (!Number.isInteger(item)) {
-            return (`ERROR`);
+            return (`${item} ERROR`);
         }
     }
     //Below this line works fine
@@ -18,20 +18,20 @@ const sumAll = function (...args) {
     } else if (highNum < 0) {
         return ('ERROR');
 
+
+        for (let i = lowNum; i <= highNum; i++) {
+            newArray.push(i);
+        }
+        for (const element of newArray) {
+            sum += element;
+        }
+        return sum;
     }
-    for (let i = lowNum; i <= highNum; i++) {
-        newArray.push(i);
-    }
-    for (const element of newArray) {
-        sum += element;
-    }
-    return sum;
+    
 }
 
+    console.log(sumAll(1, 4));
 
 
-console.log(sumAll(1, 4));
-
-
-// Do not edit below this line
-module.exports = sumAll;
+    // Do not edit below this line
+    module.exports = sumAll;

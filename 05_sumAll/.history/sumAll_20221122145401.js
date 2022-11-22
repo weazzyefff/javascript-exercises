@@ -3,8 +3,14 @@ const sumAll = function (...args) {
     console.log(args);
     for (const item of args) {
         if (!Number.isInteger(item)) {
-            return (`ERROR`);
+            return ('ERROR');
         }
+    }
+
+    if (!Number.isInteger(args)) {
+        return ('ERROR');
+    } else if (!Number.isInteger(highNum)) {
+        return ('ERROR');
     }
     //Below this line works fine
     const lowNum = Math.min(...args);
@@ -18,20 +24,20 @@ const sumAll = function (...args) {
     } else if (highNum < 0) {
         return ('ERROR');
 
+
+        for (let i = lowNum; i <= highNum; i++) {
+            newArray.push(i);
+        }
+        for (const element of newArray) {
+            sum += element;
+        }
+        return sum;
     }
-    for (let i = lowNum; i <= highNum; i++) {
-        newArray.push(i);
-    }
-    for (const element of newArray) {
-        sum += element;
-    }
-    return sum;
+
 }
 
+    console.log(sumAll(-2, 'the'));
 
 
-console.log(sumAll(1, 4));
-
-
-// Do not edit below this line
-module.exports = sumAll;
+    // Do not edit below this line
+    module.exports = sumAll;

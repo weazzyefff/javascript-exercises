@@ -1,3 +1,6 @@
+let array = [1,2,3,4];
+let theArgs = [3, 2];
+
 const removeFromArray = function(...args) {
     const array = args[0];
     const newArray = [];
@@ -8,11 +11,9 @@ const removeFromArray = function(...args) {
             newArray.push(element);
         }
     });
-    return newArray;
     }
 
-//console.log(removeFromArray([1,2,3,4], 3, 2));
-//console.log(newArray);
+console.log(removeFromArray([1,2,3,4], 3, 2));
 
 // Do not edit below this line
 module.exports = removeFromArray;

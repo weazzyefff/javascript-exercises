@@ -3,7 +3,7 @@ const sumAll = function (...args) {
     console.log(args);
     for (const item of args) {
         if (!Number.isInteger(item)) {
-            return (`ERROR`);
+            return (`${item} ERROR`);
         }
     }
     //Below this line works fine
