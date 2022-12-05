@@ -21,7 +21,7 @@ const power = function (a, b) {
 return Math.pow(a, b);
 }
 
-const factorial = function (num) {
+const factorial = function () {
  if (num < 0) return -1;
  else if (num == 0) return 1;
  else {
