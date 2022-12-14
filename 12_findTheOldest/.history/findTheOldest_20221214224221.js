@@ -33,13 +33,11 @@ function getAge(people) {
         age = person.yearOfDeath - person.yearOfBirth;
         if (age > oldestAge) {
             oldestAge = age;
-            oldestPerson = person;
         }
-        
 
     }
-    return oldestPerson;
-    
+  
+    return person;
 
 }
 

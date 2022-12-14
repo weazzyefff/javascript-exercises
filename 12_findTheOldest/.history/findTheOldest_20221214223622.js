@@ -31,15 +31,11 @@ function getAge(people) {
     let oldestPerson = null;
     for (let person of people) {
         age = person.yearOfDeath - person.yearOfBirth;
-        if (age > oldestAge) {
-            oldestAge = age;
-            oldestPerson = person;
-        }
-        
-
+        console.log(age) 
+         
     }
-    return oldestPerson;
-    
+  
+    return person;
 
 }
 

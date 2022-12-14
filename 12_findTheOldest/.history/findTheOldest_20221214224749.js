@@ -35,10 +35,10 @@ function getAge(people) {
             oldestAge = age;
             oldestPerson = person;
         }
-        
+        return oldestPerson;
 
     }
-    return oldestPerson;
+  
     
 
 }

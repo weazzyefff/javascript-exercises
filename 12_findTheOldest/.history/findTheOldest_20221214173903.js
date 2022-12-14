@@ -18,28 +18,15 @@ const people = [
 //console.log(people[0].name);
 
 const findTheOldest = function (people) {
-    const sumWithInitial = pe.reduce(
-        (accumulator, currentValue) => accumulator + currentValue,
-        initialValue
-      );
+
 
 }
 
 function getAge(people) {
     let age = 0;
-    let oldestAge = 0;
-    let oldestPerson = null;
     for (let person of people) {
-        age = person.yearOfDeath - person.yearOfBirth;
-        if (age > oldestAge) {
-            oldestAge = age;
-            oldestPerson = person;
-        }
-        
-
+        let age = person.yearOfDeath - person.yearOfBirth;
     }
-    return oldestPerson;
-    
 
 }
 
