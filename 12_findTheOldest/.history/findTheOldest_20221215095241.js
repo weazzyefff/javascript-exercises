@@ -2,7 +2,7 @@ const people = [
     {
         name: "Carly",
         yearOfBirth: 1942,
-        
+        yearOfDeath: 1970,
     },
     {
         name: "Ray",
@@ -31,14 +31,10 @@ const findTheOldest = function (people) {
                 oldestAge = age;
                 oldestPerson = person;
             }
-        } else {
-            age = date - person.yearOfBirth
-            if (age> oldestAge) {
-                oldestAge = age;
-                oldestPerson = person;
-            }
         }
+
     }
+
     return oldestPerson;
 }
 

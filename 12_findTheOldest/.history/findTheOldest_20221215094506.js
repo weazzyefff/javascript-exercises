@@ -2,7 +2,7 @@ const people = [
     {
         name: "Carly",
         yearOfBirth: 1942,
-        
+        yearOfDeath: 1970,
     },
     {
         name: "Ray",
@@ -16,8 +16,7 @@ const people = [
     },
 ]
 //console.log(people[0].name);
-const date = new Date().getFullYear();
-console.log(date);
+const date = new Date();
 
 
 const findTheOldest = function (people) {
@@ -25,24 +24,26 @@ const findTheOldest = function (people) {
     let oldestAge = 0;
     let oldestPerson = null;
     for (let person of people) {
-        if (person.yearOfDeath) {
-            age = person.yearOfDeath - person.yearOfBirth;
+        age = person.yearOfDeath - person.yearOfBirth;
+        if (person.yearOfDeath < date) {
             if (age > oldestAge) {
                 oldestAge = age;
                 oldestPerson = person;
             }
-        } else {
-            age = date - person.yearOfBirth
-            if (age> oldestAge) {
-                oldestAge = age;
-                oldestPerson = person;
-            }
         }
+
+
     }
     return oldestPerson;
+
 }
 
-console.log(findTheOldest(people));
+function getAge(people) {
+
+
+}
+
+console.log(getAge(people));
 
 // Do not edit below this line
 module.exports = findTheOldest;

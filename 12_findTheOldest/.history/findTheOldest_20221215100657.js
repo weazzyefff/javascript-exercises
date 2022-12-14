@@ -31,12 +31,7 @@ const findTheOldest = function (people) {
                 oldestAge = age;
                 oldestPerson = person;
             }
-        } else {
-            age = date - person.yearOfBirth
-            if (age> oldestAge) {
-                oldestAge = age;
-                oldestPerson = person;
-            }
+        } else if (age > oldestAge) {
         }
     }
     return oldestPerson;
